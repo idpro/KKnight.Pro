@@ -1,0 +1,251 @@
+/* line 2, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4 */
+body {
+  color: #929292;
+  padding: 155px 0 0;
+  margin: 0;
+  background: transparent url("../img/white_texture.png") repeat center center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 12 */
+p {
+  margin: 0 0 10px;
+}
+
+/* line 14 */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.wrapper:before, .wrapper:after {
+  content: " ";
+  display: table;
+}
+/* line 23, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.wrapper:after {
+  clear: both;
+}
+
+/* line 20 */
+header {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding: 35px 0 0;
+}
+/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
+header:last-child {
+  margin-right: 0;
+}
+/* line 23 */
+header #logo {
+  float: right;
+  margin: 0 0 10px;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}
+/* line 27 */
+header #logo a {
+  display: block;
+  width: 150px;
+  height: 60px;
+  background: transparent url("../img/logo.png") left top no-repeat;
+}
+/* line 36 */
+header nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 41 */
+header nav ul li {
+  text-align: right;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 15px;
+  text-shadow: 1px 0 0 1px white;
+}
+/* line 48 */
+header nav ul li a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+/* line 52 */
+header nav ul li a:hover, header nav ul li a:active {
+  text-decoration: underline;
+}
+/* line 57 */
+header #quote {
+  clear: right;
+  border-top: 1px solid #3a3e3f;
+  border-bottom: 1px solid #c5c1c0;
+  position: relative;
+  margin: 0 0 10px;
+}
+/* line 64 */
+header #quote:before, header #quote:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 73 */
+header #quote:before {
+  border-top: 1px solid #c5c1c0;
+}
+/* line 76 */
+header #quote:after {
+  border-bottom: 1px solid #3a3e3f;
+}
+/* line 79 */
+header #quote p {
+  margin: 15px 0;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 12px;
+  text-align: right;
+}
+
+/* line 89 */
+#content {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
+#content:last-child {
+  margin-right: 0;
+}
+/* line 91 */
+#content .post-wrap {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #2b5c79;
+  margin: 0 0 50px;
+  padding: 30px 0 0;
+}
+/* line 97 */
+#content .post-wrap .post {
+  background-color: #fff;
+  padding: 20px 35px 40px;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+#content .post-wrap .post:before, #content .post-wrap .post:after {
+  content: " ";
+  display: table;
+}
+/* line 23, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+#content .post-wrap .post:after {
+  clear: both;
+}
+/* line 101 */
+#content .post-wrap .post header {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  padding: 0;
+  border-right: 1px solid #e2e2e2;
+}
+/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
+#content .post-wrap .post header:last-child {
+  margin-right: 0;
+}
+/* line 105 */
+#content .post-wrap .post header h2 {
+  font-size: 12px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+/* line 110 */
+#content .post-wrap .post header h2 a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+/* line 115 */
+#content .post-wrap .post header span.date {
+  color: #878787;
+  font-size: 11px;
+}
+/* line 120 */
+#content .post-wrap .post .post-content {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
+#content .post-wrap .post .post-content:last-child {
+  margin-right: 0;
+}
+/* line 122 */
+#content .post-wrap .post .post-content p {
+  font-size: 12px;
+  color: #929292;
+}
+/* line 125 */
+#content .post-wrap .post .post-content p .read-more {
+  float: right;
+  font-style: italic;
+  color: #fdb826;
+  text-decoration: none;
+}
+/* line 131 */
+#content .post-wrap .post .post-content p .read-more:hover, #content .post-wrap .post .post-content p .read-more:active {
+  text-decoration: underline;
+}
+
+/* line 139 */
+#post {
+  background: #fff;
+  padding: 15px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* line 144 */
+#post h1 {
+  background-color: #2b5c79;
+  color: #fff;
+}
+/* line 148 */
+#post pre {
+  border-radius: 5px;
+  color: #8b7c65;
+  display: block;
+  font-family: 'Anonymous Pro', Consolas, monospace;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 19px;
+  margin: 0 0 20px;
+  padding: 15px 20px;
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
+  white-space: pre-wrap;
+  page-break-inside: avoid;
+}
