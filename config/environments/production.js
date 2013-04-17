@@ -1,6 +1,6 @@
 module.exports = {
   app: {
-    port: '80'
+    port: '3000'
   },
 
   redis: {

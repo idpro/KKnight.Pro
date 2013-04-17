@@ -2,3 +2,5 @@ node_modules/
 .git/
 log/
 .sass-cache
+config/deploy.rb
+Capfile
