@@ -5,11 +5,9 @@
   "date" : "03-19-2013"
 }}}
 
-##It happens to us all. 
+So, we want to help out with a piece of open source software, we want to write clean code, we don't want to piss off the developers we work with on a daily basis... yet when you remove a snippet you keep leaving that ugly trailing white space.
 
-We want to help out with a piece of open source software, we want to write clean code, we don't want to piss off the developers we work with on a daily basis... yet when you remove a snippet you keep leaving that ugly trailing white space.
-
-Or you remove a line and it keeps that tab at the beginning.
+Or you remove a line and it keeps that tab at the beginning. 
 
 We all know it's annoying to switch back and forth between tabs and spaces (you like one, but the core code you contribute to uses the other). Well, I'm here to try and help you, as long as you're using Sublime Text 2 that is.
 

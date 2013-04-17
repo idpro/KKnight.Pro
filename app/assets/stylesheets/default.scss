@@ -1,5 +1,6 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "fonts";
 
 body {
   color: #929292;
@@ -23,12 +24,22 @@ header {
   #logo {
     float: right;
     margin: 0 0 10px;
-    @include hide-text;
+    font-family: 'MuseoSlab-500';
+    line-height: 26px;
+    font-weight: normal;
     a {
       display: block;
+      text-decoration: none;
       width: 150px;
       height: 60px;
-      background: transparent url('../img/logo.png') left top no-repeat;
+      text-align: right;
+      color: #2B7579;
+      letter-spacing: 2px;
+      span {
+        display: block;
+        color: #fdb826;
+        letter-spacing: 1px;
+      }
     }
   }
   nav {

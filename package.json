@@ -23,6 +23,6 @@
     "grunt-contrib-sass": "~0.3.0"
   },
   "scripts": {
-    "start": "supervisor -w config,_posts,app,app.js app.js"
+    "start": "supervisor -e 'js|markdown|md|jade' app.js"
   }
 }

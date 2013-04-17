@@ -5,7 +5,13 @@
   box-sizing: border-box;
 }
 
-/* line 4 */
+@font-face {
+  font-family: 'MuseoSlab-500';
+  src: url("../fonts/267D86_0_0.eot");
+  src: url("../fonts/267D86_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/267D86_0_0.woff") format("woff"), url("../fonts/267D86_0_0.ttf") format("truetype");
+}
+
+/* line 5 */
 body {
   color: #929292;
   padding: 155px 0 0;
@@ -14,12 +20,12 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 12 */
+/* line 13 */
 p {
   margin: 0 0 10px;
 }
 
-/* line 14 */
+/* line 15 */
 .wrapper {
   width: 960px;
   margin: 0 auto;
@@ -38,7 +44,7 @@ p {
   clear: both;
 }
 
-/* line 20 */
+/* line 21 */
 header {
   display: block;
   float: left;
@@ -50,29 +56,38 @@ header {
 header:last-child {
   margin-right: 0;
 }
-/* line 23 */
+/* line 24 */
 header #logo {
   float: right;
   margin: 0 0 10px;
-  color: transparent;
-  font: 0/0 a;
-  text-shadow: none;
+  font-family: 'MuseoSlab-500';
+  line-height: 26px;
+  font-weight: normal;
 }
-/* line 27 */
+/* line 30 */
 header #logo a {
   display: block;
+  text-decoration: none;
   width: 150px;
   height: 60px;
-  background: transparent url("../img/logo.png") left top no-repeat;
+  text-align: right;
+  color: #2B7579;
+  letter-spacing: 2px;
 }
-/* line 36 */
+/* line 38 */
+header #logo a span {
+  display: block;
+  color: #fdb826;
+  letter-spacing: 1px;
+}
+/* line 47 */
 header nav ul {
   list-style: none;
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 41 */
+/* line 52 */
 header nav ul li {
   text-align: right;
   font-size: 12px;
@@ -81,16 +96,16 @@ header nav ul li {
   margin: 0 0 15px;
   text-shadow: 1px 0 0 1px white;
 }
-/* line 48 */
+/* line 59 */
 header nav ul li a {
   color: #4e4e4e;
   text-decoration: none;
 }
-/* line 52 */
+/* line 63 */
 header nav ul li a:hover, header nav ul li a:active {
   text-decoration: underline;
 }
-/* line 57 */
+/* line 68 */
 header #quote {
   clear: right;
   border-top: 1px solid #3a3e3f;
@@ -98,7 +113,7 @@ header #quote {
   position: relative;
   margin: 0 0 10px;
 }
-/* line 64 */
+/* line 75 */
 header #quote:before, header #quote:after {
   content: " ";
   position: absolute;
@@ -108,15 +123,15 @@ header #quote:before, header #quote:after {
   right: 0;
   bottom: 0;
 }
-/* line 73 */
+/* line 84 */
 header #quote:before {
   border-top: 1px solid #c5c1c0;
 }
-/* line 76 */
+/* line 87 */
 header #quote:after {
   border-bottom: 1px solid #3a3e3f;
 }
-/* line 79 */
+/* line 90 */
 header #quote p {
   margin: 15px 0;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -125,7 +140,7 @@ header #quote p {
   text-align: right;
 }
 
-/* line 89 */
+/* line 100 */
 #content {
   display: block;
   float: left;
@@ -136,7 +151,7 @@ header #quote p {
 #content:last-child {
   margin-right: 0;
 }
-/* line 91 */
+/* line 102 */
 #content .post-wrap {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -144,7 +159,7 @@ header #quote p {
   margin: 0 0 50px;
   padding: 30px 0 0;
 }
-/* line 97 */
+/* line 108 */
 #content .post-wrap .post {
   background-color: #fff;
   padding: 20px 35px 40px;
@@ -162,7 +177,7 @@ header #quote p {
 #content .post-wrap .post:after {
   clear: both;
 }
-/* line 101 */
+/* line 112 */
 #content .post-wrap .post header {
   display: block;
   float: left;
@@ -175,24 +190,24 @@ header #quote p {
 #content .post-wrap .post header:last-child {
   margin-right: 0;
 }
-/* line 105 */
+/* line 116 */
 #content .post-wrap .post header h2 {
   font-size: 12px;
   margin: 0 0 15px;
   text-transform: uppercase;
   line-height: 15px;
 }
-/* line 110 */
+/* line 121 */
 #content .post-wrap .post header h2 a {
   color: #4e4e4e;
   text-decoration: none;
 }
-/* line 115 */
+/* line 126 */
 #content .post-wrap .post header span.date {
   color: #878787;
   font-size: 11px;
 }
-/* line 120 */
+/* line 131 */
 #content .post-wrap .post .post-content {
   display: block;
   float: left;
@@ -203,36 +218,36 @@ header #quote p {
 #content .post-wrap .post .post-content:last-child {
   margin-right: 0;
 }
-/* line 122 */
+/* line 133 */
 #content .post-wrap .post .post-content p {
   font-size: 12px;
   color: #929292;
 }
-/* line 125 */
+/* line 136 */
 #content .post-wrap .post .post-content p .read-more {
   float: right;
   font-style: italic;
   color: #fdb826;
   text-decoration: none;
 }
-/* line 131 */
+/* line 142 */
 #content .post-wrap .post .post-content p .read-more:hover, #content .post-wrap .post .post-content p .read-more:active {
   text-decoration: underline;
 }
 
-/* line 139 */
+/* line 150 */
 #post {
   background: #fff;
   padding: 15px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-/* line 144 */
+/* line 155 */
 #post h1 {
   background-color: #2b5c79;
   color: #fff;
 }
-/* line 148 */
+/* line 159 */
 #post pre {
   border-radius: 5px;
   color: #8b7c65;
