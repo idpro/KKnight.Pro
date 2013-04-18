@@ -9,7 +9,11 @@ poet
   .set({
     postsPerPage : 3,
     posts        : './_posts',
-    metaFormat   : 'json'
+    metaFormat   : 'json',
+    readMoreLink : function ( post ) {
+      var anchor = '<a class="read-more" href="'+post.url+'" title="Read more of '+post.title+'">read more</a>';
+      return '<p>' + anchor + '</p>';
+    }
   })
   .createPostRoute( '/posts/:post', 'post' )
   .createPageRoute( '/page/:page', 'page' )
