@@ -5,3 +5,12 @@
        url('../fonts/267D86_0_0.woff') format('woff'),
        url('../fonts/267D86_0_0.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-Bold.eot');
+  src: url('../fonts/Asap-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Asap-Bold.woff') format('woff'),
+       url('../fonts/Asap-Bold.ttf') format('truetype'),
+       url("../fonts/Asap-Bold.svg#Asap-Bold") format("svg");;
+}

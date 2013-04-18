@@ -11,21 +11,36 @@
   src: url("../fonts/267D86_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/267D86_0_0.woff") format("woff"), url("../fonts/267D86_0_0.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Asap';
+  src: url("../fonts/Asap-Bold.eot");
+  src: url("../fonts/Asap-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Asap-Bold.woff") format("woff"), url("../fonts/Asap-Bold.ttf") format("truetype"), url("../fonts/Asap-Bold.svg#Asap-Bold") format("svg");
+}
+
 /* line 5 */
 body {
-  color: #929292;
-  padding: 155px 0 0;
+  background-color: #e9f0f4;
+  padding: 0;
   margin: 0;
-  background: transparent url("../img/white_texture.png") repeat center center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 13 */
+/* line 12 */
 p {
   margin: 0 0 10px;
 }
 
-/* line 15 */
+/* line 13 */
+a {
+  color: #a8bd44;
+  text-decoration: none;
+}
+/* line 16 */
+a:hover {
+  color: #f97e76;
+}
+
+/* line 19 */
 .wrapper {
   width: 960px;
   margin: 0 auto;
@@ -44,213 +59,276 @@ p {
   clear: both;
 }
 
-/* line 21 */
+/* line 25 */
 header {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  padding: 35px 0 0;
+  width: 100%;
+  margin: 24px 0;
 }
 /* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
 header:last-child {
   margin-right: 0;
 }
-/* line 24 */
+/* line 28 */
 header #logo {
-  float: right;
-  margin: 0 0 10px;
+  float: left;
+  margin: 0 15px 10px 0;
   font-family: 'MuseoSlab-500';
-  line-height: 26px;
+  font-size: 41px;
   font-weight: normal;
+  width: 175px;
+  height: 50px;
 }
-/* line 30 */
+/* line 36 */
 header #logo a {
-  display: block;
   text-decoration: none;
-  width: 150px;
-  height: 60px;
   text-align: right;
-  color: #2B7579;
-  letter-spacing: 2px;
+  color: #2e3641;
 }
-/* line 38 */
+/* line 40 */
 header #logo a span {
+  font-size: 24px;
   display: block;
-  color: #fdb826;
-  letter-spacing: 1px;
+  color: #f97e76;
+  margin-top: -18px;
 }
-/* line 47 */
-header nav ul {
+/* line 48 */
+header nav {
+  float: left;
+  width: 770px;
+  background-color: #fff;
+  height: 50px;
+}
+/* line 53 */
+header nav ul#main {
+  float: left;
   list-style: none;
-  float: right;
-  margin: 0;
-  padding: 0;
+  margin: 16px 0 0;
+  padding: 0 24px;
 }
-/* line 52 */
-header nav ul li {
-  text-align: right;
-  font-size: 12px;
+/* line 58 */
+header nav ul#main li {
+  float: left;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: bold;
-  margin: 0 0 15px;
-  text-shadow: 1px 0 0 1px white;
-}
-/* line 59 */
-header nav ul li a {
-  color: #4e4e4e;
-  text-decoration: none;
+  margin: 0 32px 0 0;
 }
 /* line 63 */
-header nav ul li a:hover, header nav ul li a:active {
-  text-decoration: underline;
+header nav ul#main li a {
+  color: #c1cfd9;
+  text-decoration: none;
 }
-/* line 68 */
-header #quote {
-  clear: right;
-  border-top: 1px solid #3a3e3f;
-  border-bottom: 1px solid #c5c1c0;
-  position: relative;
-  margin: 0 0 10px;
+/* line 67 */
+header nav ul#main li a:hover, header nav ul#main li a:active {
+  color: #f97e76;
+}
+/* line 71 */
+header nav ul#social {
+  float: right;
+  margin: 7px 0 0;
+  padding: 0 7px;
 }
 /* line 75 */
-header #quote:before, header #quote:after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+header nav ul#social li {
+  float: left;
+  margin: 0 0 0 4px;
+}
+/* line 78 */
+header nav ul#social li.github {
+  background-color: #4183c4;
+}
+/* line 80 */
+header nav ul#social li.github a {
+  background: url("/img/social-github.png") no-repeat center center;
+}
+/* line 82 */
+header nav ul#social li.gplus {
+  background-color: #d14836;
 }
 /* line 84 */
-header #quote:before {
-  border-top: 1px solid #c5c1c0;
+header nav ul#social li.gplus a {
+  background: url("/img/social-gplus.png") no-repeat center center;
 }
-/* line 87 */
-header #quote:after {
-  border-bottom: 1px solid #3a3e3f;
+/* line 86 */
+header nav ul#social li.twitter {
+  background-color: #39a9e0;
+}
+/* line 88 */
+header nav ul#social li.twitter a {
+  background: url("/img/social-twitter.png") no-repeat center center;
 }
 /* line 90 */
-header #quote p {
-  margin: 15px 0;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 12px;
-  text-align: right;
+header nav ul#social li.coderwall {
+  background-color: #3e8dcc;
+}
+/* line 92 */
+header nav ul#social li.coderwall a {
+  background: url("/img/social-coderwall.png") no-repeat center center;
+}
+/* line 94 */
+header nav ul#social li a {
+  display: block;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  width: 36px;
+  height: 36px;
+}
+/* line 103 */
+header #quote {
+  display: none;
 }
 
-/* line 100 */
+/* line 108 */
 #content {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 74.41059%;
+  width: 100%;
+  margin: 0 0 24px;
 }
 /* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
 #content:last-child {
   margin-right: 0;
 }
-/* line 102 */
+/* line 111 */
 #content .post-wrap {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  background-color: #2b5c79;
-  margin: 0 0 50px;
-  padding: 30px 0 0;
-}
-/* line 108 */
-#content .post-wrap .post {
-  background-color: #fff;
-  padding: 20px 35px 40px;
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 0 75px;
 }
 /* line 18, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
-#content .post-wrap .post:before, #content .post-wrap .post:after {
+#content .post-wrap:before, #content .post-wrap:after {
   content: " ";
   display: table;
 }
 /* line 23, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
-#content .post-wrap .post:after {
+#content .post-wrap:after {
   clear: both;
 }
-/* line 112 */
-#content .post-wrap .post header {
+/* line 115 */
+#content .post-wrap header {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 40.29137%;
+  width: 100%;
   padding: 0;
-  border-right: 1px solid #e2e2e2;
+  margin: 0;
+  background-color: #2e3641;
+  height: 55px;
 }
 /* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
-#content .post-wrap .post header:last-child {
+#content .post-wrap header:last-child {
   margin-right: 0;
 }
-/* line 116 */
-#content .post-wrap .post header h2 {
-  font-size: 12px;
-  margin: 0 0 15px;
-  text-transform: uppercase;
-  line-height: 15px;
-}
 /* line 121 */
-#content .post-wrap .post header h2 a {
-  color: #4e4e4e;
+#content .post-wrap header h2 {
+  margin: 14px 0 0 24px;
+  padding: 0;
+  font-size: 24px;
+  font-family: 'Asap';
+  font-weight: normal;
+  color: #e9f0f4;
+}
+/* line 128 */
+#content .post-wrap header h2 a {
+  color: #e9f0f4;
   text-decoration: none;
 }
-/* line 126 */
-#content .post-wrap .post header span.date {
+/* line 133 */
+#content .post-wrap header span.date {
   color: #878787;
   font-size: 11px;
 }
-/* line 131 */
-#content .post-wrap .post .post-content {
+/* line 139 */
+#content .post-wrap .post-meta {
+  background-color: #c3d1da;
+  height: 35px;
+  clear: left;
+}
+/* line 143 */
+#content .post-wrap .post-meta span {
+  display: block;
+  font-family: 'Asap';
+  font-size: 16px;
+  color: #2e3641;
+  padding: 8px 24px 0 24px;
+}
+/* line 149 */
+#content .post-wrap .post-meta span a {
+  text-decoration: none;
+  color: #2e3641;
+}
+/* line 152 */
+#content .post-wrap .post-meta span a:hover {
+  text-decoration: underline;
+}
+/* line 153 */
+#content .post-wrap .post-meta span a:not(:last-child):after {
+  content: ", ";
+}
+/* line 155 */
+#content .post-wrap .post-meta span.tags {
+  text-align: center;
+}
+/* line 156 */
+#content .post-wrap .post-meta span.category {
+  float: left;
+}
+/* line 157 */
+#content .post-wrap .post-meta span.date {
+  float: right;
+}
+/* line 161 */
+#content .post-wrap .post-content {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 57.35098%;
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 24px;
 }
 /* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
-#content .post-wrap .post .post-content:last-child {
+#content .post-wrap .post-content:last-child {
   margin-right: 0;
 }
-/* line 133 */
-#content .post-wrap .post .post-content p {
-  font-size: 12px;
-  color: #929292;
+/* line 165 */
+#content .post-wrap .post-content h2, #content .post-wrap .post-content h3, #content .post-wrap .post-content h4, #content .post-wrap .post-content h5 {
+  font-size: 1.3em;
+  font-family: 'Asap';
+  color: #2e3641;
 }
-/* line 136 */
-#content .post-wrap .post .post-content p .read-more {
+/* line 170 */
+#content .post-wrap .post-content p {
+  font-size: 13px;
+  color: #000;
+  line-height: 18px;
+}
+/* line 174 */
+#content .post-wrap .post-content p .read-more {
+  background-color: #f97e76;
   float: right;
-  font-style: italic;
-  color: #fdb826;
+  color: #fff;
   text-decoration: none;
+  font-family: 'Asap';
+  text-transform: uppercase;
+  width: 160px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 16px;
 }
-/* line 142 */
-#content .post-wrap .post .post-content p .read-more:hover, #content .post-wrap .post .post-content p .read-more:active {
+/* line 186 */
+#content .post-wrap .post-content p .read-more:hover, #content .post-wrap .post-content p .read-more:active {
   text-decoration: underline;
 }
-
-/* line 150 */
-#post {
-  background: #fff;
-  padding: 15px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
-/* line 155 */
-#post h1 {
-  background-color: #2b5c79;
-  color: #fff;
-}
-/* line 159 */
-#post pre {
+/* line 189 */
+#content .post-wrap .post-content pre {
   border-radius: 5px;
-  color: #8b7c65;
+  color: #3d444e;
   display: block;
   font-family: 'Anonymous Pro', Consolas, monospace;
   font-size: 12px;
@@ -263,4 +341,35 @@ header #quote p {
   text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
   white-space: pre-wrap;
   page-break-inside: avoid;
+}
+/* line 208 */
+#content ul.pagination {
+  padding: 0;
+  margin: 0;
+}
+/* line 211 */
+#content ul.pagination li {
+  float: left;
+  list-style: none;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 10px 0 0;
+}
+/* line 217 */
+#content ul.pagination li a {
+  background-color: #c1cfd9;
+  display: block;
+  width: 44px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+/* line 225 */
+#content ul.pagination li a:hover {
+  background-color: #9eb2c0;
+}
+/* line 228 */
+#content ul.pagination li.active a {
+  background-color: #2e3641;
 }

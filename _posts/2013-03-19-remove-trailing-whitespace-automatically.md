@@ -46,7 +46,7 @@ These two options will let you covert all tabs or spaces to the opposite. First 
 
 I've also added in a keyboard shortcut to reindent all of the code to be properly formatted. Just open up `Preferences → Key Bindings - User` and add this line to the array:   
 
-	{ "keys": ["super+shift+r"], "command": "reindent" , "args": {"single_line": false}}
+	{ "keys": ["super+shift+r"], "command": "reindent" , "args": {"single_line": false} }
 
 ## Conclusion
 
