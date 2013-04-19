@@ -45,9 +45,6 @@ a:hover {
   width: 960px;
   margin: 0 auto;
   *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
 }
 /* line 18, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
 .wrapper:before, .wrapper:after {
@@ -61,15 +58,8 @@ a:hover {
 
 /* line 25 */
 header {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%;
   margin: 24px 0;
-}
-/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
-header:last-child {
-  margin-right: 0;
+  float: left;
 }
 /* line 28 */
 header #logo {
@@ -92,7 +82,7 @@ header #logo a span {
   font-size: 24px;
   display: block;
   color: #f97e76;
-  margin-top: -18px;
+  margin: -19px 8px 0 0;
 }
 /* line 48 */
 header nav {
@@ -183,132 +173,97 @@ header #quote {
 
 /* line 108 */
 #content {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%;
   margin: 0 0 24px;
-}
-/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
-#content:last-child {
-  margin-right: 0;
+  clear: left;
 }
 /* line 111 */
 #content .post-wrap {
-  *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   margin: 0 0 75px;
-}
-/* line 18, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
-#content .post-wrap:before, #content .post-wrap:after {
-  content: " ";
-  display: table;
-}
-/* line 23, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
-#content .post-wrap:after {
-  clear: both;
+  position: relative;
 }
 /* line 115 */
 #content .post-wrap header {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #2e3641;
   height: 55px;
+  float: none;
+  position: relative;
+  z-index: 1;
 }
-/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
-#content .post-wrap header:last-child {
-  margin-right: 0;
-}
-/* line 121 */
+/* line 123 */
 #content .post-wrap header h2 {
-  margin: 14px 0 0 24px;
-  padding: 0;
+  margin: 0;
+  padding: 14px 0 0 24px;
   font-size: 24px;
   font-family: 'Asap';
   font-weight: normal;
   color: #e9f0f4;
 }
-/* line 128 */
+/* line 130 */
 #content .post-wrap header h2 a {
   color: #e9f0f4;
   text-decoration: none;
 }
-/* line 133 */
+/* line 135 */
 #content .post-wrap header span.date {
   color: #878787;
   font-size: 11px;
 }
-/* line 139 */
+/* line 141 */
 #content .post-wrap .post-meta {
   background-color: #c3d1da;
   height: 35px;
-  clear: left;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
 }
-/* line 143 */
+/* line 147 */
 #content .post-wrap .post-meta span {
-  display: block;
+  display: none;
   font-family: 'Asap';
   font-size: 16px;
   color: #2e3641;
   padding: 8px 24px 0 24px;
+  float: left;
 }
-/* line 149 */
+/* line 154 */
 #content .post-wrap .post-meta span a {
   text-decoration: none;
   color: #2e3641;
 }
-/* line 152 */
+/* line 157 */
 #content .post-wrap .post-meta span a:hover {
   text-decoration: underline;
 }
-/* line 153 */
+/* line 158 */
 #content .post-wrap .post-meta span a:not(:last-child):after {
   content: ", ";
 }
-/* line 155 */
-#content .post-wrap .post-meta span.tags {
-  text-align: center;
-}
-/* line 156 */
-#content .post-wrap .post-meta span.category {
-  float: left;
-}
-/* line 157 */
+/* line 160 */
 #content .post-wrap .post-meta span.date {
   float: right;
 }
-/* line 161 */
+/* line 164 */
 #content .post-wrap .post-content {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%;
   background-color: #fff;
   padding: 12px 24px;
+  display: none;
+  overflow: hidden;
 }
-/* line 54, /Users/kknight/Sites/kknight.pro/app/assets/stylesheets/neat/grid/_span-columns.scss */
-#content .post-wrap .post-content:last-child {
-  margin-right: 0;
-}
-/* line 165 */
+/* line 169 */
 #content .post-wrap .post-content h2, #content .post-wrap .post-content h3, #content .post-wrap .post-content h4, #content .post-wrap .post-content h5 {
   font-size: 1.3em;
   font-family: 'Asap';
   color: #2e3641;
 }
-/* line 170 */
+/* line 174 */
 #content .post-wrap .post-content p {
   font-size: 13px;
   color: #000;
   line-height: 18px;
 }
-/* line 174 */
+/* line 178 */
 #content .post-wrap .post-content p .read-more {
   background-color: #f97e76;
   float: right;
@@ -321,11 +276,11 @@ header #quote {
   padding: 6px 0;
   font-size: 16px;
 }
-/* line 186 */
+/* line 190 */
 #content .post-wrap .post-content p .read-more:hover, #content .post-wrap .post-content p .read-more:active {
   text-decoration: underline;
 }
-/* line 189 */
+/* line 193 */
 #content .post-wrap .post-content pre {
   border-radius: 5px;
   color: #3d444e;
@@ -342,12 +297,20 @@ header #quote {
   white-space: pre-wrap;
   page-break-inside: avoid;
 }
-/* line 208 */
+/* line 209 */
+#content .post-wrap .post-content #avatar {
+  float: right;
+  width: 228px;
+  background-color: #c3d1da;
+  padding: 5px;
+  margin: 0 0 0 24px;
+}
+/* line 219 */
 #content ul.pagination {
   padding: 0;
   margin: 0;
 }
-/* line 211 */
+/* line 222 */
 #content ul.pagination li {
   float: left;
   list-style: none;
@@ -355,7 +318,7 @@ header #quote {
   line-height: 24px;
   margin: 0 10px 0 0;
 }
-/* line 217 */
+/* line 228 */
 #content ul.pagination li a {
   background-color: #c1cfd9;
   display: block;
@@ -365,11 +328,11 @@ header #quote {
   color: #fff;
   text-align: center;
 }
-/* line 225 */
+/* line 236 */
 #content ul.pagination li a:hover {
   background-color: #9eb2c0;
 }
-/* line 228 */
+/* line 239 */
 #content ul.pagination li.active a {
   background-color: #2e3641;
 }

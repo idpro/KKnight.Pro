@@ -16,7 +16,7 @@ poet
     }
   })
   .createPostRoute( '/posts/:post', 'post' )
-  .createPageRoute( '/page/:page', 'page' )
+  .createPageRoute( '/pages/:page', 'page' )
   .createTagRoute( '/tag/:tag', 'tag' )
   .createCategoryRoute( '/category/:category', 'category' )
   .init();
@@ -27,6 +27,9 @@ app.use( express.static( __dirname + '/public' ));
 app.use( app.router );
 
 app.get( '/', function ( req, res ) { res.render( 'index' ) });
+app.get('/about-me', function ( req, res ) { res.render( 'about-me' ) });
+app.get('/contact-me', function ( req, res ) { res.render( 'contact-me' ) });
+app.get('/portfolio', function ( req, res ) { res.render( 'portfolio' ) });
 
 app.configure('development', function () {
   var cp    = require('child_process'),

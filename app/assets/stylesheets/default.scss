@@ -19,12 +19,12 @@ a {
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  @include outer-container;
+  @include clearfix;
 }
 
 header {
-  @include span-columns(12);
   margin: 24px 0;
+  float: left;
   #logo {
     float: left;
     margin: 0 15px 10px 0;
@@ -41,7 +41,7 @@ header {
         font-size: 24px;
         display: block;
         color: #f97e76;
-        margin-top: -18px;
+        margin: -19px 8px 0 0;
       }
     }
   }
@@ -106,21 +106,23 @@ header {
 }
 
 #content {
-  @include span-columns(12);
   margin: 0 0 24px;
+  clear: left;
   .post-wrap {
-    @include outer-container;
     margin: 0 0 75px;
+    position: relative;
 
     header {
-      @include span-columns(12);
       padding: 0;
       margin: 0;
       background-color: #2e3641;
       height: 55px;
+      float: none;
+      position: relative;
+      z-index: 1;
       h2 {
-        margin: 14px 0 0 24px;
-        padding: 0;
+        margin: 0;
+        padding: 14px 0 0 24px;
         font-size: 24px;
         font-family: 'Asap';
         font-weight: normal;
@@ -139,29 +141,31 @@ header {
     .post-meta {
       background-color: #c3d1da;
       height: 35px;
-      clear: left;
+      margin-top: -35px;
+      position: relative;
+      z-index: 2;
       span {
-        display: block;
+        display: none;
         font-family: 'Asap';
         font-size: 16px;
         color: #2e3641;
         padding: 8px 24px 0 24px;
+        float: left;
         a {
           text-decoration: none;
           color: #2e3641;
           &:hover { text-decoration: underline; }
           &:not(:last-child):after { content: ", "; }
         }
-        &.tags { text-align: center; }
-        &.category { float: left; }
         &.date { float: right; }
       }
     }
 
     .post-content {
-      @include span-columns(12);
       background-color: #fff;
       padding: 12px 24px;
+      display: none;
+      overflow: hidden;
       h2, h3, h4, h5 {
         font-size: 1.3em;
         font-family: 'Asap';
@@ -202,6 +206,13 @@ header {
         white-space: pre-wrap;
         page-break-inside: avoid;
       }
+      #avatar {
+        float: right;
+        width: 228px;
+        background-color: #c3d1da;
+        padding: 5px;
+        margin: 0 0 0 24px;
+      }
     }
   }
 
@@ -230,31 +241,3 @@ header {
     }
   }
 }
-
-// #post {
-//   background: #fff;
-//   padding: 15px;
-//   border-top-left-radius: 6px;
-//   border-top-right-radius: 6px;
-//   h1 {
-//     background-color: #2b5c79;
-//     color: #fff;
-//   }
-//   pre {
-//     border-radius: 5px;
-//     color: rgb(139, 124, 101);
-//     display: block;
-//     font-family: 'Anonymous Pro', Consolas, monospace;
-//     font-size: 12px;
-//     font-style: normal;
-//     font-variant: normal;
-//     font-weight: normal;
-//     line-height: 19px;
-//     margin: 0 0 20px;
-//     padding: 15px 20px;
-//     text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
-//     white-space: pre-wrap;
-//     page-break-inside: avoid;
-//   }
-// }
-
