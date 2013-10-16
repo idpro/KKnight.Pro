@@ -164,17 +164,19 @@ i.service-icon:hover {
 }
 
 /* Callout */
-
-.callout {
+.callout1, .callout2 {
   color: #ffffff;
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/callout.jpg) no-repeat center center fixed;
+  background: url(../img/callout1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.callout2 {
+  background: url(../img/callout2.jpg) no-repeat center center fixed;
 }
 
 .about {
