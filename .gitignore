@@ -5,5 +5,5 @@ log/
 config/deploy.rb
 Capfile
 .DS_Store
-javascripts/default.min.js
-stylesheets/default.min.css
+js/default.min.js
+css/default.min.css
