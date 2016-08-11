@@ -7,3 +7,4 @@ Capfile
 .DS_Store
 js/default.min.js
 css/default.min.css
+sftp-config.json
