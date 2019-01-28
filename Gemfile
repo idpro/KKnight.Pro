@@ -1,2 +1,0 @@
-gem "bourbon"
-gem "neat"
