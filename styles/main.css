@@ -12,9 +12,10 @@ body {
       rgba(164, 96, 72, 0.5) 15%,
       rgba(49, 67, 69, 0.75)
     ),
-    url("../images/bg.jpg");
+    url("../images/bg@mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -41,17 +42,33 @@ body::after {
   z-index: 1;
 }
 
+@media only screen and (min-width: 767px) {
+  body {
+    background-image: linear-gradient(
+        215deg,
+        rgba(164, 96, 72, 0.5) 15%,
+        rgba(49, 67, 69, 0.75)
+      ),
+      url("../images/bg.jpg");
+  }
+}
+
 @media only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   body {
-    background-image: url("../images/bg@2x.jpg");
+    background-image: linear-gradient(
+        215deg,
+        rgba(164, 96, 72, 0.5) 15%,
+        rgba(49, 67, 69, 0.75)
+      ),
+      url("../images/bg@2x.jpg");
   }
 }
 
 .card {
   width: 300px;
-  background-color: #c8d2c5;
+  background-color: #e0cab5;
   border-radius: 6px;
   padding: 18px;
   border: 1px solid var(--dark-slate);
@@ -147,7 +164,7 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c8d2c5;
+  background-color: #e0cab5;
 }
 
 .card__content li a:hover,
