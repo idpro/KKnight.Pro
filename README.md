@@ -1,6 +1,6 @@
 # KKnight.Pro
 
-Check out my [resume](https://kknight.pro/resume.pdf), and then [hire me](maito:kyleaknight@gmail.com) to come be a part of your UI team!
+Check out my [resume](https://kknight.pro/resume.pdf), and then [hire me](mailto:kyleaknight@gmail.com) to come be a part of your UI team!
 
 ### Kind Words From My Colleagues
 

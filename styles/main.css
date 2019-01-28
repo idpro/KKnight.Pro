@@ -66,6 +66,7 @@ body::after {
 .card__header p {
   margin: 1em 0;
   text-align: justify;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 
@@ -135,9 +136,9 @@ body::after {
   justify-content: space-around;
 }
 
-.card__content a,
-.card__content a:visited,
-.card__content a:link {
+.card__content li a,
+.card__content li a:visited,
+.card__content li a:link {
   transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
   color: var(--dark-sea);
   border: 1px solid var(--dark-sea);
@@ -149,8 +150,26 @@ body::after {
   background-color: #c8d2c5;
 }
 
-.card__content a:hover,
-.card__content a:focus {
+.card__content li a:hover,
+.card__content li a:focus {
   color: var(--greyn);
   background-color: var(--dark-sea);
+}
+
+.card__content p {
+  margin: 2em 0 1em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.card__content p a,
+.card__content p a:link,
+.card__content p a:visited {
+  transition: color 75ms ease-in-out;
+  color: var(--dark-slate);
+}
+
+.card__content p a:hover,
+.card__content p a:focus {
+  color: var(--sienna);
 }
